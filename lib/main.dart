@@ -10,7 +10,7 @@ import 'package:app_gsa/page_price.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: PagePrice(),
+    home: Concorrente(),
     theme: ThemeData(
         hintColor: Colors.white,
         primaryColor: Colors.white,
