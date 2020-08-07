@@ -12,13 +12,13 @@ void main() {
     debugShowCheckedModeBanner: false,
     home: Concorrente(),
     theme: ThemeData(
-        hintColor: Colors.white,
-        primaryColor: Colors.white,
+        hintColor: Colors.blue[900],
+        primaryColor: Colors.blue[900],
         inputDecorationTheme: InputDecorationTheme(
-            enabledBorder:
-                OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
-            focusedBorder:
-                OutlineInputBorder(borderSide: BorderSide(color: Colors.white)),
-            hintStyle: TextStyle(color: Colors.white))),
+            enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.blue[900])),
+            focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.blue[900])),
+            hintStyle: TextStyle(color: Colors.blue[900]))),
   ));
 }

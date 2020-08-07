@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueAccent,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(10.0),
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                   Icon(
                     Icons.person,
                     size: 120.0,
-                    color: Colors.white,
+                    color: Colors.blue[900],
                   ),
                 ],
               ),
@@ -102,13 +102,14 @@ class _HomePageState extends State<HomePage> {
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                   labelText: "Usuário",
-                  labelStyle: TextStyle(color: Colors.white, fontSize: 20.0),
+                  labelStyle:
+                      TextStyle(color: Colors.blue[900], fontSize: 20.0),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      borderSide: BorderSide(color: Colors.white)),
+                      borderSide: BorderSide(color: Colors.blue[900])),
                 ),
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.blue[900]),
                 controller: user,
               ),
               SizedBox(
@@ -119,13 +120,14 @@ class _HomePageState extends State<HomePage> {
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                   labelText: "Senha",
-                  labelStyle: TextStyle(color: Colors.white, fontSize: 20.0),
+                  labelStyle:
+                      TextStyle(color: Colors.blue[900], fontSize: 20.0),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      borderSide: BorderSide(color: Colors.white)),
+                      borderSide: BorderSide(color: Colors.blue[900])),
                 ),
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.blue[900]),
                 controller: password,
               ),
               SizedBox(
@@ -134,7 +136,7 @@ class _HomePageState extends State<HomePage> {
               Text(
                 log_response,
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white, fontSize: 18.0),
+                style: TextStyle(color: Colors.blue[900], fontSize: 18.0),
               ),
               SizedBox(
                 height: 40.0,
@@ -148,13 +150,13 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: Text(
                     "Logar",
-                    style: TextStyle(color: Colors.black, fontSize: 20.0),
+                    style: TextStyle(color: Colors.white, fontSize: 20.0),
                   ),
                   elevation: 10.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
-                      side: BorderSide(color: Colors.white)),
-                  color: Colors.white,
+                      side: BorderSide(color: Colors.blue[900])),
+                  color: Colors.blue[900],
                 ),
               )
             ],

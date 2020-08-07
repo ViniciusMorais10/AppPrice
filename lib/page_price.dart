@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:flushbar/flushbar.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class PagePrice extends StatefulWidget {
   @override
@@ -90,7 +91,7 @@ class _PagePriceState extends State<PagePrice> {
           style: TextStyle(fontSize: 25.0, color: Colors.white),
         ),
       ),
-      backgroundColor: Colors.blue[400],
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(10),
@@ -148,24 +149,29 @@ class _PagePriceState extends State<PagePrice> {
               TextField(
                 controller: pvenda,
                 focusNode: focusVarejo,
-                decoration:
-                    InputDecoration(labelText: "Varejo", prefixText: "R\$"),
+                decoration: InputDecoration(
+                  labelText: "Varejo",
+                  prefixText: "R\$",
+                ),
                 keyboardType: TextInputType.number,
                 style: TextStyle(color: Colors.black, fontSize: 25.0),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 25.0),
               Container(
                 height: 50.0,
                 child: RaisedButton(
                   onPressed: () {
-                    Flushbar(
-                      title: "Hey",
-                      message: "HeyMessage",
-                      duration: Duration(seconds: 3),
-                      flushbarPosition: FlushbarPosition.TOP,
-                    );
                     postJson();
+                    Fluttertoast.showToast(
+                      msg: "Salvo com Sucesso!",
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.BOTTOM,
+                      //timeInSecForIos: 1,
+                      backgroundColor: Colors.blue[900],
+                      textColor: Colors.white,
+                      fontSize: 18.0,
+                    );
                   },
                   child: Text(
                     "Salvar",

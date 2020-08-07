@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ProjetosFlutter\\AplicativoPrice\\AppPrice\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\src\\app_gsa\\app_gsa\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\ProjetosFlutter\\AplicativoPrice\\AppPrice\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\src\\app_gsa\\app_gsa\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
